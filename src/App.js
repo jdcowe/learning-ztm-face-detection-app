@@ -8,6 +8,7 @@ import Register from './components/register/Register';
 import Rank from './components/rank/Rank';
 import Particles from 'react-particles-js';
 import Clarifai from 'clarifai';
+import config from './config';
 import './App.css';
 
 const particlesOptions = {
@@ -23,7 +24,7 @@ const particlesOptions = {
 }
 
 const app = new Clarifai.App({
-  apiKey: '24f535b2d3d2419abccea9c836ae9d29'
+  apiKey: config.apiKey
  });
 
 class App extends Component {
